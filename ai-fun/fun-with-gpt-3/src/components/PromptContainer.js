@@ -4,7 +4,7 @@ import { Card } from './Card';
 
 export const PromptContainer = () => {
     return (
-        <div className='promptContainer'>
+        <div className='prompt-container'>
             <Card />
             <Card />
             <Card />

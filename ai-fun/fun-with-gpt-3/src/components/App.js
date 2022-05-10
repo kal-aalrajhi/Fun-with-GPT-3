@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { PromptContainer } from './PromptContainer'
 import '../styles/App.css';
 
 export class App extends Component {
@@ -17,6 +18,7 @@ export class App extends Component {
         return (
             <main className='App'>
                 <h1>Fun with GPT-3!</h1>
+                <PromptContainer />
             </main>
         )
     }

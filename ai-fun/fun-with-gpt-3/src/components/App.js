@@ -20,7 +20,7 @@ export class App extends Component {
             <main className='App container'>
                 <h1>Fun with GPT-3!</h1>
                 <Form />
-                <PromptContainer />
+                <PromptContainer prompts={this.state.prompts} />
             </main>
         )
     }

@@ -3,7 +3,9 @@ import '../styles/PromptContainer.css';
 import { Card } from './Card';
 
 export const PromptContainer = ({ prompts }) => {
-    const promptCards = prompts.map(prompt => {
+    const sortedPrompts = prompts.sort((promptA, promptB) => Number(promptB.id) - Number(promptA.id));
+
+    const promptCards = sortedPrompts.map(prompt => {
         return (
             <Card 
                 prompt={prompt.prompt}
@@ -13,6 +15,7 @@ export const PromptContainer = ({ prompts }) => {
             />
         )
     });
+
     return (
         <div className='prompt-container'>
             {promptCards}

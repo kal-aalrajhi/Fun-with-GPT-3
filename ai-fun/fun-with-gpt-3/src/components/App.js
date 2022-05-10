@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
 
-class App extends Component {
+export class App extends Component {
     constructor() {
+        super();
         this.state = {
-            ideas: []
+            prompt: []
         }
+    }
+
+    render() {
+        return (
+            <main className='App'>
+                <h1>Fun with GPT-3!</h1>
+            </main>
+        )
     }
 }

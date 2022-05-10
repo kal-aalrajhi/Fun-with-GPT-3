@@ -1,8 +1,13 @@
 import React from 'react';
 import '../styles/PromptContainer.css';
+import { Card } from './Card';
 
 export const PromptContainer = () => {
     return (
-        <h2>Prompts/responses go here!</h2>
+        <div className='promptContainer'>
+            <Card />
+            <Card />
+            <Card />
+        </div>
     )
 }

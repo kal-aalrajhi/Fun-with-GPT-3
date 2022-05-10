@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Form } from './Form';
 import { PromptContainer } from './PromptContainer'
 import '../styles/App.css';
 
@@ -16,8 +17,9 @@ export class App extends Component {
 
     render() {
         return (
-            <main className='App'>
+            <main className='App container'>
                 <h1>Fun with GPT-3!</h1>
+                <Form />
                 <PromptContainer />
             </main>
         )

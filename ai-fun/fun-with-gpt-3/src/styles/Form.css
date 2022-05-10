@@ -4,7 +4,12 @@ form {
   
   input, button {
     margin: 5px;
-    width: 30%;
+    width: 50%;
     border: 2px solid black;
     font-size: 18px;
+  }
+
+  input {
+      height: 30px;
+      padding: 10px;
   }

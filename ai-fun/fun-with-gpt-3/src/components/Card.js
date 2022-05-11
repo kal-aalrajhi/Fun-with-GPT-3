@@ -3,7 +3,6 @@ import '../styles/Card.css';
 
 export const Card = ( {prompt, response, id, removePrompt} ) => {
     const formattedResponse = response.split(/\s(?=\d+\.)/);
-    console.log(formattedResponse);
     
     return (
         <div className='card'>

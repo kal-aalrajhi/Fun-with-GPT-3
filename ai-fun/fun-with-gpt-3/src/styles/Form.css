@@ -3,13 +3,12 @@ form {
   }
   
   input, button {
-    margin: 5px;
+    margin: 0.5rem;
     width: 50%;
-    border: 2px solid black;
-    font-size: 18px;
-  }
-
-  input {
-      height: 30px;
-      padding: 10px;
+    border: 0;
+    border-bottom: 0.4rem solid var(--button-color);
+    background-color: #fff;
+    font-size: 2.5rem;
+    height: 6rem;
+    padding: 1rem;
   }

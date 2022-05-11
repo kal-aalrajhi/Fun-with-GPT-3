@@ -1,10 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+  font-size: 62.5%;
+  --primary-color: #2c65a6;
+  --secondary-color: #2e4961;
+  --button-color: #e27d5f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  background-color: var(--primary-color);
+}
+
+h1 {
+    margin: 2rem 0 0.5rem 0;
+    font-size: 4rem;
+    color: #fff;
+}
+
+h2 {
+    margin: 1rem 0 2rem 0;
+    font-size: 2rem;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
 .App {
     text-align: center;
 }
   
 .container {
-    max-width: 1100px;
+    max-width: 110rem;
     margin: 0 auto;
     overflow: auto;
-    padding: 0 40px;
+    padding: 0 4rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: none;
+    transition: all 0.2s;
+    background-color: var(--button-color);
+}
+
+.btn:hover {
+    transform: scale(.97);
+    color:#333;
+    background-color:#fff;
+}
+
+.btn-remove {
+    font-size: 2rem;
+    margin: 2rem 0 1rem 0;
+    width: 30%;
+}
+
+.btn-submit {
+    margin-bottom: 4rem;
 }

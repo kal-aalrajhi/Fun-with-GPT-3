@@ -23,9 +23,10 @@ export class App extends Component {
     render() {
         return (
             <main className='App container'>
-                <h1>Fun Facts!</h1>
+                <h1>Three Facts</h1>
+                <h2>A simple way to learn three things about one thing!</h2>
                 <Form addPrompt={this.addPrompt} />
-                {!this.state.prompts.length && <h2>No prompts yet -- add some!</h2>}
+                {!this.state.prompts.length && <h3>For best results input a single noun or verb like Giraffes, Running, or Pizza</h3>}
                 <PromptContainer prompts={this.state.prompts} removePrompt={this.removePrompt} />
             </main>
         )

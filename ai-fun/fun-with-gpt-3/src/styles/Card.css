@@ -1,5 +1,40 @@
+ul {
+  text-align: left;
+  margin: 2rem;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
 .card {
-    box-sizing: border-box;
-    border: 3px solid black;
-    padding: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
+  font-size: 2rem;
+  color: #fff;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.4rem;
+  transition: all 500ms;
+  overflow: hidden;
+  padding: 1.1rem;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  
+.card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+}
+
+.card-title {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}

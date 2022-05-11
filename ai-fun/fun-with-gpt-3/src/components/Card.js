@@ -2,11 +2,18 @@ import React from 'react';
 import '../styles/Card.css';
 
 export const Card = ( {prompt, response, id, removePrompt} ) => {
+    const formattedResponse = response.split(/\s(?=\d+\.)/);
+    console.log(formattedResponse);
+    
     return (
         <div className='card'>
-            <h4>{prompt.toUpperCase()}</h4>
-            <h4>Facts: {response}</h4>
-            <button onClick={() => removePrompt(id)}>❌</button>
+            <h3 className='card-title'>{prompt.toUpperCase()}</h3>
+            <ul>
+                <li>{formattedResponse[1]}</li>
+                <li>{formattedResponse[2]}</li>
+                <li>{formattedResponse[3]}</li>
+            </ul>
+            <button className='btn btn-remove' onClick={() => removePrompt(id)}>remove</button>
         </div>
     )
 }

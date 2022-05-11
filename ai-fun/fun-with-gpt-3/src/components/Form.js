@@ -20,10 +20,9 @@ export class Form extends Component {
         const openai = new OpenAIApi(configuration);
         
         openai.createCompletion("text-curie-001", {
-            // prompt: `Generate animal description for the following animal: ${this.state.prompt}`,
-            prompt: `Book Title: Harry Potter\n One-Sentence Summary: The Harry Potter series follows the adventures of a young wizard, Harry Potter, as he navigates his way through life at Hogwarts School of Witchcraft and Wizardry, battles the evil Lord Voldemort, and tries to uncover the truth about his family.\n \nBook Title: ${this.state.prompt}\nOne-Sentence Summary:`,
-            temperature: 0.7,
-            max_tokens: 50,
+            prompt: `Three Facts About: Giraffes \n1. Giraffes are the tallest animals in the world. \n2. Giraffes can reach up to 18 feet tall and weigh up to 1,500 pounds. \n3. Giraffes have a long neck that they use. Three Facts About: ${this.state.prompt}`,
+            temperature: 0.8,
+            max_tokens: 100,
             top_p: 1,
             frequency_penalty: 0,
             presence_penalty: 0,
@@ -39,7 +38,11 @@ export class Form extends Component {
 
     submitPrompt = (event) => {
         event.preventDefault();
-        this.getAIResponse();
+        if (this.state.prompt) {
+            this.getAIResponse();
+        } else {
+            this.setState({errorMessage: "Please input something you'd like a fact about!"})
+        }
     }
 
     createNewPrompt = () => {
@@ -65,23 +68,13 @@ export class Form extends Component {
             <form>
                 <input
                     type='text'
-                    placeholder='Enter a book title here'
+                    placeholder='Let me give you three facts about...'
                     name='prompt'
                     value={this.state.prompt}
                     onChange={event => this.handleChangePrompt(event)}
                     required='required'
                 />
-                <button
-                    onClick={event => {
-                        if (this.state.prompt) {
-                            this.submitPrompt(event);
-                        } else {
-                            this.setState({errorMessage: "Please input a book title."})
-                        }
-                    }}
-                > 
-                Submit
-                </button>
+                <button onClick={event => this.submitPrompt(event)}>Submit</button>
                 {this.state.errorMessage && <h4>{this.state.errorMessage}</h4>}
                 {this.state.response && this.createNewPrompt()}
             </form>

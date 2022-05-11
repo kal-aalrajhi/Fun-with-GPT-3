@@ -20,12 +20,14 @@ export class Form extends Component {
         const openai = new OpenAIApi(configuration);
         
         openai.createCompletion("text-curie-001", {
-            prompt: `Three Facts About: Giraffes \n1. Giraffes are the tallest animals in the world. \n2. Giraffes can reach up to 18 feet tall and weigh up to 1,500 pounds. \n3. Giraffes have a long neck that they use. Three Facts About: ${this.state.prompt}`,
-            temperature: 0.8,
-            max_tokens: 100,
+            prompt: `List Three Facts About Giraffes: \n 1. Giraffes can reach heights of up to 18 feet tall and weight up to 1,600 pounds. \n 2. They have a long neck and legs that give them a surprising level of agility for their size. \n 3. Giraffes are the tallest living animals on Earth.
+            List Three Facts About ${this.state.prompt}: `,
+            temperature: 0.6,
+            max_tokens: 150,
             top_p: 1,
-            frequency_penalty: 0,
-            presence_penalty: 0,
+            frequency_penalty: 0.52,
+            presence_penalty: 0.5,
+            stop: ["4."],
         })
         .then((response) => {
             this.setState({
@@ -35,6 +37,21 @@ export class Form extends Component {
         })
         .catch(err => console.log('Error: ', err))
     }
+
+
+    // const response = await openai.createCompletion("text-curie-001", {
+    //     prompt: "List 10 science fiction books:\n\n1. 1984 by George Orwell\n2. Altered Carbon by Richard K. Morgan\n3. Frankenstein by Mary Shelley\n4. The Hitchhiker's Guide to the Galaxy by Douglas Adams\n5. The Hunger Games by Suzanne Collins\n6. Jurassic Park by Michael Crichton\n7. 1984 by George Orwell\n8. Altered Carbon by Richard K. Morgan\n9. Frankenstein by Mary Shelley\n10. The Hitchhiker's Guide to the Galaxy by Douglas Adams",
+    //     temperature: 0.5,
+    //     max_tokens: 200,
+    //     top_p: 1,
+    //     frequency_penalty: 0.52,
+    //     presence_penalty: 0.5,
+    //     stop: ["11."],
+    //   });
+
+
+
+
 
     submitPrompt = (event) => {
         event.preventDefault();

@@ -76,7 +76,7 @@ export class Form extends Component {
                     onChange={event => this.handleChangePrompt(event)}
                     required='required'
                 />
-                <button onClick={event => this.submitPrompt(event)}>Submit</button>
+                <button className='btn btn-submit' onClick={event => this.submitPrompt(event)}>Submit</button>
                 {this.state.errorMessage && <h4>{this.state.errorMessage}</h4>}
                 {this.state.response && this.createNewPrompt()}
             </form>

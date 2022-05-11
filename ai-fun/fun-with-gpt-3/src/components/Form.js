@@ -19,9 +19,10 @@ export class Form extends Component {
         const openai = new OpenAIApi(configuration);
         
         openai.createCompletion("text-curie-001", {
-            prompt: `Generate animal description for the following animal: ${this.state.prompt}`,
-            temperature: 0.8,
-            max_tokens: 200,
+            // prompt: `Generate animal description for the following animal: ${this.state.prompt}`,
+            prompt: `Book Title: Harry Potter\n One-Sentence Summary: The Harry Potter series follows the adventures of a young wizard, Harry Potter, as he navigates his way through life at Hogwarts School of Witchcraft and Wizardry, battles the evil Lord Voldemort, and tries to uncover the truth about his family.\n \nBook Title: ${this.state.prompt}\nOne-Sentence Summary:`,
+            temperature: 0.7,
+            max_tokens: 50,
             top_p: 1,
             frequency_penalty: 0,
             presence_penalty: 0,

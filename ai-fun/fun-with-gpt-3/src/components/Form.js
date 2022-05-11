@@ -43,7 +43,7 @@ export class Form extends Component {
         if (this.state.prompt) {
             this.getAIResponse();
         } else {
-            this.setState({errorMessage: "Please input something you'd like a fact about!"})
+            this.setState({errorMessage: "Please input something you'd like three facts about!"})
         }
     }
 

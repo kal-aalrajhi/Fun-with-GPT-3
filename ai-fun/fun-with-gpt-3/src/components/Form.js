@@ -7,7 +7,8 @@ export class Form extends Component {
         super();
         this.state = {
             prompt: '',
-            response: ''
+            response: '',
+            errorMessage: ''
         }
     }
 
@@ -41,22 +42,21 @@ export class Form extends Component {
         this.getAIResponse();
     }
 
-    updateStuff = () => {
+    createNewPrompt = () => {
         const newPrompt = {
             id: Date.now(),
             prompt: this.state.prompt,
             response: this.state.response
         }
         this.props.addPrompt(newPrompt);
-        console.log(newPrompt);
         this.clearInputs();
     }
 
     clearInputs = () => {
-        this.setState({prompt: '', response: ''});
+        this.setState({prompt: '', response: '', errorMessage: ''});
     }
 
-    handleChange = (event) => {
+    handleChangePrompt = (event) => {
         this.setState({ prompt: event.target.value });
     }
 
@@ -65,14 +65,27 @@ export class Form extends Component {
             <form>
                 <input
                     type='text'
-                    placeholder='Enter a prompt here'
+                    placeholder='Enter a book title here'
                     name='prompt'
                     value={this.state.prompt}
-                    onChange={event => this.handleChange(event)}
+                    onChange={event => this.handleChangePrompt(event)}
+                    required='required'
                 />
-                <button onClick={event => this.submitPrompt(event)}>Submit</button>
-                {this.state.response && this.updateStuff()}
+                <button
+                    onClick={event => {
+                        if (this.state.prompt) {
+                            this.submitPrompt(event);
+                        } else {
+                            this.setState({errorMessage: "Please input a book title."})
+                        }
+                    }}
+                > 
+                Submit
+                </button>
+                {this.state.errorMessage && <h4>{this.state.errorMessage}</h4>}
+                {this.state.response && this.createNewPrompt()}
             </form>
         )
     }
 }
+

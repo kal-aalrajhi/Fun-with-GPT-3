@@ -4,8 +4,8 @@ import '../styles/Card.css';
 export const Card = ( {prompt, response, id, removePrompt} ) => {
     return (
         <div className='card'>
-            <h4>Prompt: {prompt}</h4>
-            <h4>Response: {response}</h4>
+            <h4>{prompt.toUpperCase()}</h4>
+            <h4>Facts: {response}</h4>
             <button onClick={() => removePrompt(id)}>❌</button>
         </div>
     )

@@ -1,10 +1,55 @@
+/* Colors
+#FFAAA5
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+  font-size: 62.5%;
+  --primary-color: #21295C;
+  --secondary-color: #065A82;
+  --dark-blue: #1B3B6F;
+  --light-grey: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #fafafa;
+  line-height: 1.6;
+  background-color: #FFAAA5;
+}
+
+h1 {
+    margin: 2rem 0 0.5rem 0;
+    font-size: 4rem;
+}
+
+h2 {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
 .App {
     text-align: center;
 }
   
 .container {
-    max-width: 1100px;
+    max-width: 110rem;
     margin: 0 auto;
     overflow: auto;
-    padding: 0 40px;
+    padding: 0 4rem;
 }
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    border: none;
+  }

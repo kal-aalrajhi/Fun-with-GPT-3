@@ -6,7 +6,7 @@ export const Card = ( {prompt, response, id, removePrompt} ) => {
         <div className='card'>
             <h4>{prompt.toUpperCase()}</h4>
             <h4>Facts: {response}</h4>
-            <button onClick={() => removePrompt(id)}>❌</button>
+            <button className='btn btn-remove' onClick={() => removePrompt(id)}>remove</button>
         </div>
     )
 }

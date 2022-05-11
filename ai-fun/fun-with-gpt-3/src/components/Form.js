@@ -14,7 +14,7 @@ export class Form extends Component {
 
     getAIResponse = () => {
         const configuration = new Configuration({
-            apiKey: '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',
+            apiKey: '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',
           });
         
         const openai = new OpenAIApi(configuration);
@@ -37,21 +37,6 @@ export class Form extends Component {
         })
         .catch(err => console.log('Error: ', err))
     }
-
-
-    // const response = await openai.createCompletion("text-curie-001", {
-    //     prompt: "List 10 science fiction books:\n\n1. 1984 by George Orwell\n2. Altered Carbon by Richard K. Morgan\n3. Frankenstein by Mary Shelley\n4. The Hitchhiker's Guide to the Galaxy by Douglas Adams\n5. The Hunger Games by Suzanne Collins\n6. Jurassic Park by Michael Crichton\n7. 1984 by George Orwell\n8. Altered Carbon by Richard K. Morgan\n9. Frankenstein by Mary Shelley\n10. The Hitchhiker's Guide to the Galaxy by Douglas Adams",
-    //     temperature: 0.5,
-    //     max_tokens: 200,
-    //     top_p: 1,
-    //     frequency_penalty: 0.52,
-    //     presence_penalty: 0.5,
-    //     stop: ["11."],
-    //   });
-
-
-
-
 
     submitPrompt = (event) => {
         event.preventDefault();

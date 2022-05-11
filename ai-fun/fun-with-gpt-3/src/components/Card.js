@@ -7,7 +7,7 @@ export const Card = ( {prompt, response, id, removePrompt} ) => {
     
     return (
         <div className='card'>
-            <h3>{prompt.toUpperCase()}</h3>
+            <h3 className='card-title'>{prompt.toUpperCase()}</h3>
             <ul>
                 <li>{formattedResponse[1]}</li>
                 <li>{formattedResponse[2]}</li>

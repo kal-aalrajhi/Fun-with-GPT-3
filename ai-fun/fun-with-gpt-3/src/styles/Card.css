@@ -13,7 +13,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #3fb3a3;
+  background: var(--secondary-color);
   font-size: 2rem;
   color: #fff;
   box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
@@ -34,4 +34,7 @@ li {
     transform: translateY(-3px) scale(1.1);
 }
 
-
+.card-title {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}

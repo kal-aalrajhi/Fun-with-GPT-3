@@ -43,7 +43,7 @@ export class Form extends Component {
         if (this.state.prompt) {
             this.getAIResponse();
         } else {
-            this.setState({errorMessage: "Please input something you'd like three facts about!"})
+            this.setState({errorMessage: "Sorry, you can't have three facts about nothing..."})
         }
     }
 
@@ -77,7 +77,7 @@ export class Form extends Component {
                     required='required'
                 />
                 <button className='btn btn-submit' onClick={event => this.submitPrompt(event)}>Submit</button>
-                {this.state.errorMessage && <h4>{this.state.errorMessage}</h4>}
+                {this.state.errorMessage && <h3>{this.state.errorMessage}</h3>}
                 {this.state.response && this.createNewPrompt()}
             </form>
         )

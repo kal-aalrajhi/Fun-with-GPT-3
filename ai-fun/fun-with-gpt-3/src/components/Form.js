@@ -14,7 +14,7 @@ export class Form extends Component {
 
     getAIResponse = () => {
         const configuration = new Configuration({
-            apiKey: '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',
+            apiKey: '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',
           });
         
         const openai = new OpenAIApi(configuration);

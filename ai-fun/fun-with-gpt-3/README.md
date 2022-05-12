@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Three Facts (Fun with GPT-3)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+#### Getting Started
+1. Clone the repo from [github](https://github.com/kal-aalrajhi/Fun-with-GPT-3).
+2. Cd into the directory from your terminal and install the project dependencies:
+- Run `npm install` or `npm i` in the terminal
+3. To see the HTML page:
+- Run `npm start` in the terminal
+- Press `ctrl/cmd + c` to exit
+4. Copy the local host address from your terminal and add to your web browser to see the HTML page
 
-In the project directory, you can run:
+### Table of Contents
+- [About the Project](#about-the-project)
+- [Contributors](#contributors)
+- [Technologies Used](#technologies-used)
+- [Instructions on Use](#instructions-on-use)
+- [Demo of Features](#demo-of-features)
+- [Challenges and Wins](#challenges-and-wins)
+- [Project Overview and Goals](#project-overview-and-goals)
+- [Future Additons](#future-additons)
+- [Deployable](#deployable)
 
-### `npm start`
+#### About the Project
+Did you know kangaroos are the only animals in the world that can walk backwards? Heck, if you're hankering for more kangaroo facts (or facts about anything else) try out Three Facts. This webapp allows users to type in the name of anything and get three facts about it! Users are encouraged to use nouns and verbs, but you're always welcome to goof around and see what the AI spits out! 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Two additional** features have been added to the base requirements: 
+1. *Remove card feature* where users can delete fact cards they no longer want. 
+2. *Make the app more focused* where the app utilizes the AI to specifically provide three facts about the input.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This was part of the Fall 2022 Shopify Front End Developer Intern Challenge.
 
-### `npm test`
+#### Contributors
+ - [Kal Al-Rajhi](https://github.com/kal-aalrajhi)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Technologies Used
+- React
+- Javascript
+- HTML
+- CSS
+- GPT-3 text-curie-001 AI Engine (from OpenAI)
+- Fetch API
+- WAI-ARIA
+- Lighthouse
 
-### `npm run build`
+#### Instructions on Use
+Type in the name of anything, ideally a verb or noun, and then hit 'submit'. Users should see a card appear with the text the user input and three facts about it. That's it! 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Notice that the cards appear from most recent, to last input - thus each card that's created will be prioritized to the top. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Users are welcome to remove cards they're no longer using.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Three Facts is completely tabbable, thus making it fully usable without a mouse!
 
-### `npm run eject`
+Finally, with the use of semantic tags and WAI-ARIA tags, the website is screen reader friendly.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Demo of Features
+*note that all features shown are accessable with just a keyboard*
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. On page load users are prompted to input something they would like three facts about and a fact card appears display the users input as the card's title and three facts about the input.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Add Fact Cards](https://media.giphy.com/media/L9Z1fKZ7XaMrVKBW4a/giphy.gif)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Users can delete as many fact cards and in any order they would like. 
 
-## Learn More
+![Delete Fact Cards](https://media.giphy.com/media/Vm64HC7ox5xHqM2YH7/giphy.gif)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Challenges and Wins
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##### Challenges
+- Learning to use React with only a couple days of experience with it and implementing GPT-3 with no prior experience.
+##### Wins
+- Working with asynchronous features and making sure the web app fully accessable.
 
-### Code Splitting
+#### Project Overview And Goals
+- Use OOP to drive the design of the application and the code
+- Gain competency with React fundamentals by creating my first React project
+- Work with an API to send and receive data
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Future Additions
+- Fix logged issues (see Github Issues) / add more error handling
+- Implement local storage to allow users to keep their cards on page reload
+- Add more thematic styling
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Deployable
+- [Visit Overlook-Hotel](https://kal-aalrajhi.github.io/overlook-hotel/)

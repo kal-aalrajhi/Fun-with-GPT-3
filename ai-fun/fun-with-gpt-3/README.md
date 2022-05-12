@@ -1,5 +1,5 @@
 # Three Facts (Fun with GPT-3)
-
+<img width="479" alt="Screen Shot 2022-05-11 at 9 51 16 PM" src="https://user-images.githubusercontent.com/97044701/167988535-eec92026-9422-47ff-9f9f-be384b4b5678.png">
 
 #### Getting Started
 1. Clone the repo from [github](https://github.com/kal-aalrajhi/Fun-with-GPT-3).
@@ -70,7 +70,7 @@ Finally, with the use of semantic tags and WAI-ARIA tags, the website is screen 
 ##### Challenges
 - Learning to use React with only a couple days of experience with it and implementing GPT-3 with no prior experience.
 ##### Wins
-- Working with asynchronous features and making sure the web app fully accessable.
+- Working with asynchronous features and making sure the web app is fully accessable.
 
 #### Project Overview And Goals
 - Use OOP to drive the design of the application and the code
@@ -83,4 +83,4 @@ Finally, with the use of semantic tags and WAI-ARIA tags, the website is screen 
 - Add more thematic styling
 
 #### Deployable
-- [Visit Overlook-Hotel](https://kal-aalrajhi.github.io/overlook-hotel/)
+- [Visit Three Facts](https://kal-aalrajhi.github.io/Fun-with-GPT-3/)

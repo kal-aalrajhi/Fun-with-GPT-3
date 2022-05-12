@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Fun-with-GPT-3/static/css/main.f5a9561f.css",
+    "main.css": "/Fun-with-GPT-3/static/css/main.63727061.css",
     "main.js": "/Fun-with-GPT-3/static/js/main.ee4d9d14.js",
     "index.html": "/Fun-with-GPT-3/index.html",
-    "main.f5a9561f.css.map": "/Fun-with-GPT-3/static/css/main.f5a9561f.css.map",
+    "main.63727061.css.map": "/Fun-with-GPT-3/static/css/main.63727061.css.map",
     "main.ee4d9d14.js.map": "/Fun-with-GPT-3/static/js/main.ee4d9d14.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5a9561f.css",
+    "static/css/main.63727061.css",
     "static/js/main.ee4d9d14.js"
   ]
 }

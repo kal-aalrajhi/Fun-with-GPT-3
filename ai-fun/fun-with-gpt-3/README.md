@@ -101,7 +101,5 @@ Three Facts is completely tabbable, thus making it fully usable without a mouse!
 #### Deployable
 ** Please note this is not a fully deployed APP - I was unable to find a viable workaround which would avoid triggering a key rotation. This is something I would love to figuire out in the near future.** 
 
-- To full deploy the app locally please see [Getting Started](#getting-started).
-
-- [Visit Three Facts Partial Deployable](https://kal-aalrajhi.github.io/Fun-with-GPT-3/)
+- [Visit Three Facts Deployable](https://kal-aalrajhi.github.io/Fun-with-GPT-3/)
 

@@ -3,12 +3,29 @@
 
 #### Getting Started
 1. Clone the repo from [github](https://github.com/kal-aalrajhi/Fun-with-GPT-3).
+
 2. Cd into the directory from your terminal and install the project dependencies:
 - Run `npm install` or `npm i` in the terminal
-3. To see the HTML page:
+
+3. You will need to generate your own API key from [OpenAI API](https://beta.openai.com/overview). 
+
+4. Once you have the API key, do the following: 
+- Open the repo in your favorite text editor and navigate to the `.env` file in the repo's root directorynavgiateToE
+![navigateoEnv](https://user-images.githubusercontent.com/97044701/168192366-d4c3a28a-14b5-4d78-a37b-452ced6a3d54.png)
+
+- In the `.env` file, assign the `REACT_APP_API_API_KEY=` variable to your assigned API key
+![assignKeyToVariable](https://user-images.githubusercontent.com/97044701/168192743-3b2625dd-bf1e-40a1-a796-d21390d54ecf.png)
+
+-Example: 
+![dummyAPI](https://user-images.githubusercontent.com/97044701/168192785-0677078f-2e2d-4431-9288-5139187b59ee.png)
+
+- Don't forget to save! You should be good to go now 👍🏽
+
+5. To see the HTML page:
 - Run `npm start` in the terminal
 - Press `ctrl/cmd + c` to exit
-4. Copy the local host address from your terminal and add to your web browser to see the HTML page
+6. Copy the local host address from your terminal and add to your web browser to see the HTML page
+
 
 ### Table of Contents
 - [About the Project](#about-the-project)
@@ -39,9 +56,6 @@ This was part of the Fall 2022 Shopify Front End Developer Intern Challenge.
 - HTML
 - CSS
 - GPT-3 text-curie-001 AI Engine (from OpenAI)
-- Fetch API
-- WAI-ARIA
-- Lighthouse
 
 #### Instructions on Use
 Type in the name of anything, ideally a verb or noun, and then hit 'submit'. Users should see a card appear with the text the user input and three facts about it. That's it! 
@@ -51,8 +65,6 @@ Notice that the cards appear from most recent, to last input - thus each card th
 Users are welcome to remove cards they're no longer using.
 
 Three Facts is completely tabbable, thus making it fully usable without a mouse!
-
-Finally, with the use of semantic tags and WAI-ARIA tags, the website is screen reader friendly.
 
 #### Demo of Features
 *note that all features shown are accessable with just a keyboard*
@@ -68,9 +80,9 @@ Finally, with the use of semantic tags and WAI-ARIA tags, the website is screen 
 #### Challenges and Wins
 
 ##### Challenges
-- Learning to use React with only a couple days of experience with it and implementing GPT-3 with no prior experience.
+- Unable to get deployable to work without openAI automatically cycling the working API.
 ##### Wins
-- Working with asynchronous features and making sure the web app is fully accessable.
+- Learning to use React with only a couple days of experience with it and implementing GPT-3 with no prior experience.
 
 #### Project Overview And Goals
 - Use OOP to drive the design of the application and the code
@@ -83,4 +95,9 @@ Finally, with the use of semantic tags and WAI-ARIA tags, the website is screen 
 - Add more thematic styling
 
 #### Deployable
-- [Visit Three Facts](https://kal-aalrajhi.github.io/Fun-with-GPT-3/)
+** Please note this is not a fully deployed APP - I was unable to find a viable workaround which would avoid triggering a key rotation. This is something I would love to figuire out in the near future.** 
+
+- To full deploy the app locally please see [Getting Started](#getting-started).
+
+- [Visit Three Facts Partial Deployable](https://kal-aalrajhi.github.io/Fun-with-GPT-3/)
+

@@ -1,6 +1,10 @@
 # Three Facts (Fun with GPT-3)
 <img width="479" alt="Screen Shot 2022-05-11 at 9 51 16 PM" src="https://user-images.githubusercontent.com/97044701/167988535-eec92026-9422-47ff-9f9f-be384b4b5678.png">
 
+#### Full Demo
+![Three_Facts_Full_Demo](https://user-images.githubusercontent.com/97044701/168196109-15a43666-4227-4a4f-bfeb-2ec170e2ab6a.gif)
+
+
 #### Getting Started
 1. Clone the repo from [github](https://github.com/kal-aalrajhi/Fun-with-GPT-3).
 

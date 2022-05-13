@@ -90,7 +90,7 @@ Three Facts is completely tabbable, thus making it fully usable without a mouse!
 - Work with an API to send and receive data
 
 #### Future Additions
-- Fix logged issues (see Github Issues) / add more error handling
+- Full deployable
 - Implement local storage to allow users to keep their cards on page reload
 - Add more thematic styling
 

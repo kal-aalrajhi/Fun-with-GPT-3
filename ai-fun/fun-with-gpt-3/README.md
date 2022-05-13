@@ -16,7 +16,7 @@
 - In the `.env` file, assign the `REACT_APP_API_API_KEY=` variable to your assigned API key
 ![assignKeyToVariable](https://user-images.githubusercontent.com/97044701/168192743-3b2625dd-bf1e-40a1-a796-d21390d54ecf.png)
 
--Example: 
+- Example: 
 ![dummyAPI](https://user-images.githubusercontent.com/97044701/168192785-0677078f-2e2d-4431-9288-5139187b59ee.png)
 
 - Don't forget to save! You should be good to go now 👍🏽

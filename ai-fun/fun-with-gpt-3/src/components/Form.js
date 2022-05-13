@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/Form.css';
 const { Configuration, OpenAIApi } = require("openai");
+const { REACT_APP_API_KEY } = process.env;
 
 export class Form extends Component {
     constructor() {
@@ -14,7 +15,7 @@ export class Form extends Component {
 
     getAIResponse = () => {
         const configuration = new Configuration({
-            apiKey: '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',
+            apiKey: `${REACT_APP_API_KEY}`,
           });
         
         const openai = new OpenAIApi(configuration);

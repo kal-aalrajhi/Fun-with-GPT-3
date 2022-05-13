@@ -4,6 +4,8 @@
 #### Full Demo
 ![Three_Facts_Full_Demo](https://user-images.githubusercontent.com/97044701/168196109-15a43666-4227-4a4f-bfeb-2ec170e2ab6a.gif)
 
+#### Deployable
+- [Visit Three Facts Deployable](https://kal-aalrajhi.github.io/Fun-with-GPT-3/)
 
 #### Getting Started
 1. Clone the repo from [github](https://github.com/kal-aalrajhi/Fun-with-GPT-3).
@@ -97,9 +99,3 @@ Three Facts is completely tabbable, thus making it fully usable without a mouse!
 - Full deployable
 - Implement local storage to allow users to keep their cards on page reload
 - Add more thematic styling
-
-#### Deployable
-** Please note this is not a fully deployed APP - I was unable to find a viable workaround which would avoid triggering a key rotation. This is something I would love to figuire out in the near future.** 
-
-- [Visit Three Facts Deployable](https://kal-aalrajhi.github.io/Fun-with-GPT-3/)
-
